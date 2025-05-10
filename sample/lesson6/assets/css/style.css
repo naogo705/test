@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+html {
+  background-color: #6f8ebd;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px 0 0;
+  background-color: #6f8ebd;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.top_left,
+.top_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top_right_search,
+.top_right_phone {
+  margin-right: 10px;
+}
+
+.material-icons.font-size-30 {
+  font-size: 30px;
+}
+
+.material-icons.font-size-36 {
+  font-size: 36px;
+}
+
+.material-icons.font-size-48 {
+  font-size: 48px;
+}
+
+.material-icons.font-size-60 {
+  font-size: 60px;
+}
+
+.material-icons.orange {
+  color: #ec907d;
+}
+
+.top_left_name {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.middle {
+  padding: 78px 20px 90px;
+}
+
+.middle_inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.middle_inner:first-child {
+  margin-top: 0;
+}
+
+.account_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+}
+
+.message_box {
+  flex: 1;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+  line-height: 20px;
+}
+
+.memberAccount .message_box {
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.myAccount .message_box {
+  margin-right: 10px;
+  background-color: #96db90;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.message_add {
+  margin-right: 14px;
+}
+
+.message_form {
+  width: 100%;
+}
+
+.message_input {
+  border: 2px solid #666;
+  border-radius: 25px;
+  padding: 5px 8px;
+  height: 40px;
+  width: 100%;
+}
+
+.memberAccount .message_box {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 15px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.memberAccount .message_box:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #fff;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+.myAccount .message_box {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 10px;
+  border-radius: 12px;
+  background: #96db90;
+}
+
+.myAccount .message_box:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #96db90;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
